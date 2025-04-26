@@ -28,12 +28,17 @@ export async function POST(req) {
         .replace(/<(?!br\s*\/?)[^>]+>/g, "");
 
 		const sendGridMail = {
-			to: process.env.EMAIL_CLIENT,
-			from: process.env.EMAIL_MASTER,
-			subject: `Protection nuisibles - ${subject}`,
-			text: `${name} vous a contacté.\n\nVoici son message :\n\n${message}`,
-			html: `<p>${name} vous a contacté.</p><p>Voici son message :</p><p>${message}</p>`,
-		};		
+            to: process.env.EMAIL_CLIENT,
+            from: {
+                email: process.env.EMAIL_MASTER,
+                name: name,
+            },
+            replyTo: email,
+            subject: `Protection nuisibles - ${subject}`,
+            text: `${name} vous a contacté.\n\nVoici son message :\n\n${message}`,
+            html: `<p>${name} vous a contacté.</p><p>Voici son message :</p><p>${contenu}</p>`,
+        };
+            
 
     try {
         await sgMail.send(sendGridMail);
