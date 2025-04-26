@@ -7,16 +7,15 @@ import { useInView } from 'react-intersection-observer';
 import styles from './simpleBanner.module.css';
 
 const images = [
-  '/image1.jpg',
-  '/image2.jpg',
-  '/image3.jpg', 
-  '/image4.jpg', 
-  '/image5.jpg',
-  '/image6.jpg',
-  '/image7.jpg',
-  '/image8.jpg',
-  '/image9.jpg',
-  '/image10.jpg',
+  '/image4.png',
+  '/image5.png',
+  '/image6.png',
+  '/image7.png',
+  '/image8.png',
+  '/image9.png',
+  '/image10.png',
+  '/image11.png',
+  '/image12.png',
 ];
 
 export default function SimpleBanner() {

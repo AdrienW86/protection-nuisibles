@@ -59,7 +59,7 @@ export default function Header() {
           <li> <Link className={styles.li} href="/pictures" onClick={handleMenuToggle}> Photos </Link></li>
           <li> <Link className={styles.li} href="/desinsectisation" onClick={handleMenuToggle}> Désinsectisation </Link></li>
           <li> <Link className={styles.li} href="/deratisation" onClick={handleMenuToggle}> Dératisation </Link></li>
-          <li> <Link className={styles.li} href="/punaises" onClick={handleMenuToggle}> Punaises de lit </Link></li>
+          <li> <Link className={styles.li} href="/frelons" onClick={handleMenuToggle}> Nids de guêpes / frelons </Link></li>
           <li> <Link className={styles.li} href="savoir-faire" onClick={handleMenuToggle}> Qui sommes-nous ? </Link></li>
           <li> <Link className={styles.li} href="/contact" onClick={handleMenuToggle}> Contact </Link></li>
         </ul>
