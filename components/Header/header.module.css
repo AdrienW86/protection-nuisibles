@@ -113,7 +113,7 @@
     height: 15vh;
     width: 15vh;
     position: relative;
-    left: 25vh
+    left: 17vh
 }
 
 .image {
@@ -121,5 +121,5 @@
     z-index: 2;
     left: 2px;
     height: 15vh;
-    width: 28vh
+    width: 34vh
 }
