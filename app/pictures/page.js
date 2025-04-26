@@ -8,7 +8,7 @@ export default function Pictures() {
   return (
     <main className={styles.main}>
       <Header />
-     <h2 className={styles.h2}>  Nos réalisations </h2>
+     <h2 className={styles.h2}>  Nos interventions </h2>
       <Gallery />
       <Footer />     
     </main>

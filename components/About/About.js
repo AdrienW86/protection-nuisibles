@@ -5,26 +5,32 @@ export default function About() {
   return (
     <section className={styles.container}>
         <h1 className={styles.title}> Qui sommes-nous ? </h1>
-            <p className={styles.p}> Elite Couverture, c’est avant tout une équipe de professionnels passionnés par leur métier, 
-                au service de vos projets de construction et de rénovation. Basée sur des valeurs solides comme la rigueur, 
-                la transparence et la qualité du travail bien fait, notre entreprise s’est imposée comme un acteur de confiance 
-                dans les domaines de la couverture, de la peinture intérieure et extérieure, et de la maçonnerie. 
+            <p className={styles.p}>
+                Protection Nuisibles, c’est avant tout une équipe d’experts dédiée à la protection de votre cadre de vie, 
+                avec des solutions efficaces contre tous types de nuisibles. Basée dans les Pyrénées-Orientales (66), 
+                notre entreprise repose sur des valeurs solides : réactivité, professionnalisme et engagement qualité.
             </p>
         <h2 className={styles.h2}> Une entreprise à taille humaine, proche de ses clients </h2>
-            <p className={styles.p}> Chez Elite Couverture, chaque client compte. Nous croyons en la force d’un accompagnement personnalisé, 
-                à l’écoute de vos besoins réels. Que vous soyez un particulier ou un professionnel, nous mettons tout en 
-                œuvre pour vous proposer des solutions sur mesure, durables et esthétiques.
+            <p className={styles.p}>
+                Chez Protection Nuisibles, chaque intervention est personnalisée. Nous plaçons l'écoute et le conseil au cœur de notre démarche, 
+                pour vous proposer des traitements adaptés à votre situation. Particuliers, professionnels ou collectivités, 
+                nous intervenons rapidement et en toute discrétion.
             </p>
-        <h2 className={styles.h2}> Des artisans qualifiés, un savoir-faire reconnu </h2>
-            <p className={styles.p}> Notre équipe est composée d’artisans qualifiés, expérimentés et régulièrement formés aux nouvelles techniques et normes du bâtiment. 
-                Nous travaillons avec des matériaux de qualité, sélectionnés pour leur fiabilité et leur longévité.
+        <h2 className={styles.h2}> Des techniciens certifiés, un savoir-faire reconnu </h2>
+            <p className={styles.p}>
+                Notre équipe est composée de techniciens formés aux méthodes les plus récentes de lutte anti-nuisibles 
+                (dératisation, désinsectisation, désinfection). Nous utilisons des produits homologués et des techniques 
+                respectueuses de l’environnement et de votre sécurité.
             </p>
         <h2 className={styles.h2}> Une exigence de qualité à chaque étape </h2>
-        <p className={styles.p}>  De la première prise de contact à la réception finale des travaux, nous accordons une importance particulière au respect des délais, 
-            à la propreté du chantier, et à la satisfaction totale de nos clients. Chaque intervention est couverte par notre garantie décennale, 
-            gage de notre engagement et de notre sérieux.
+        <p className={styles.p}>
+            De votre premier appel à la finalisation de l’intervention, nous veillons à respecter les délais, 
+            à garantir une intervention soignée, et à assurer votre satisfaction totale. Chaque prestation est suivie 
+            d’un contrôle qualité rigoureux et, si nécessaire, de recommandations pour éviter toute récidive.
         </p>
-        <p className={styles.p}>Elite Couverture, c’est plus qu’une entreprise : c’est un partenaire de confiance pour donner vie à vos projets, en toute sérénité.</p>
+        <p className={styles.p}>
+            Protection Nuisibles, votre partenaire de confiance dans le 66 pour un environnement sain, sécurisé et sans nuisibles.
+        </p>
     </section>
   )
 }

@@ -5,9 +5,8 @@ import styles from './map.module.css';
 
 export default function GoogleMap() {
   const address = {
-    name: "Elite Couverture",
-    email: "klenngurtner@gmail.com",
-    phone: "06 98 14 42 22",
+    name: "Protection Nuisibles",
+    phone: "06 62 12 56 11",
     fullAddress: "Pyrénées Orientales",
   };
 
@@ -21,9 +20,6 @@ export default function GoogleMap() {
         </p>
         <p className={styles.span}>
           <strong>Téléphone :</strong> {address.phone}
-        </p>
-        <p className={styles.span}>
-          <strong>Email :</strong> {address.email}
         </p>
       </div>
       <div className={styles.mapContainer}>

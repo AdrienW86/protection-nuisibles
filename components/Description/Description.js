@@ -1,4 +1,4 @@
-'use client'; // pour un projet Next.js avec hooks React
+'use client';
 
 import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -32,8 +32,8 @@ export default function Description() {
 
         <motion.section className={styles.localisation}>
           <Image          
-            src="/image1.jpg"
-            alt="Vue pittoresque et charmante du Château de Projan entouré de collines"
+            src="/image9.png"
+            alt="Technicien en intervention contre les nuisibles dans les Pyrénées-Orientales"
             width={400}
             height={400}
             sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 33vw"
@@ -50,8 +50,8 @@ export default function Description() {
               exit={{ opacity: 0, y: 50 }}  
               transition={{ duration: 0.5 }}
             > 
-             Basée dans les Pyrénées-Orientales (66), Elite Couverture intervient dans tout le département : Perpignan, Canet-en-Roussillon, Argelès-sur-Mer, Céret, Prades et alentours.
-             Nous nous déplaçons rapidement pour vos travaux de couverture, peinture et maçonnerie, que ce soit en ville, en bord de mer ou en zone rurale.
+             Basée dans les Pyrénées-Orientales (66), Protection Nuisibles intervient rapidement sur tout le département : Perpignan, Canet-en-Roussillon, Argelès-sur-Mer, Céret, Prades et leurs alentours.
+             Nous vous proposons des solutions efficaces contre les rats, souris, insectes, guêpes, frelons et autres nuisibles, aussi bien en milieu urbain que rural.
             </motion.p>
           </div>
         </motion.section>
@@ -60,7 +60,7 @@ export default function Description() {
           <h2
             className={styles.h2}
           >
-            Pourquoi choisir Elite Couverture ?
+            Pourquoi choisir Protection Nuisibles ?
           </h2>
         </div>
 
@@ -77,8 +77,8 @@ export default function Description() {
                 }}
                 exit={{ opacity: 0, x: -100 }}
                 transition={{ duration: 0.5 }}
-                src="/image5.jpg"
-                alt="photos d'une toiture en travaux"
+                src="/image12.png"
+                alt="Équipement professionnel contre les rongeurs et insectes"
                 width={300}
                 height={300}
                 sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 33vw"
@@ -95,7 +95,7 @@ export default function Description() {
                 transition={{ duration: 0.5 }}
                 className={styles.p}
               >
-                <span className={styles.span}> Expertise en couverture traditionnelle et moderne</span>Nous réalisons tous types de toitures (tuiles, bac acier, zinguerie…) avec une parfaite maîtrise des normes en vigueur, assurant l’étanchéité et la durabilité de votre couverture.
+                <span className={styles.span}> Interventions rapides et efficaces</span>Nous agissons en urgence ou sur rendez-vous pour éradiquer durablement les infestations et protéger vos espaces de vie ou de travail.
               </motion.p>
             </li>
             <li className={styles.li}>
@@ -108,8 +108,8 @@ export default function Description() {
                 }}
                 exit={{ opacity: 0, x: -100 }}
                 transition={{ duration: 0.5 }}
-                src="/image10.jpg"
-                alt="Vue pittoresque et charmante du Château de Projan entouré de collines"
+                src="/image3.png"
+                alt="Traitement contre les insectes volants et rampants"
                 width={200}
                 height={200}
                 sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 33vw"
@@ -126,9 +126,8 @@ export default function Description() {
                 transition={{ duration: 0.5 }}
                 className={styles.p}
               > 
-                <span className={styles.span}>Peinture intérieure et extérieure haut de gamme</span>Nos finitions sont réalisées avec des peintures professionnelles adaptées à chaque support. Préparation minutieuse des surfaces, application soignée, rendu impeccable.
+                <span className={styles.span}> Produits homologués et respectueux de l'environnement</span>Nous utilisons uniquement des traitements agréés, sûrs pour votre famille, vos animaux domestiques et respectueux de l'écosystème local.
               </motion.p>
-             
             </li>
             <li className={styles.li}>
               <motion.img
@@ -140,8 +139,8 @@ export default function Description() {
                 }}
                 exit={{ opacity: 0, x: -100 }}
                 transition={{ duration: 0.5 }}
-                src="/image9.jpg"
-                alt="Vue pittoresque et charmante du Château de Projan entouré de collines"
+                src="/image2.png"
+                alt="Expertise anti-nuisibles en milieu rural et urbain"
                 width={200}
                 height={200}
                 sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 33vw"
@@ -158,7 +157,7 @@ export default function Description() {
                 transition={{ duration: 0.5 }}
                 className={styles.p}
               >
-                <span className={styles.span}> Maçonnerie solide et sur-mesure</span>De la rénovation de façades aux murets et dallages, nous garantissons des ouvrages robustes, durables et esthétiques, dans le respect des règles de l’art.
+                <span className={styles.span}> Expertise locale reconnue</span>Notre parfaite connaissance du terrain et des comportements des nuisibles dans les Pyrénées-Orientales nous permet d'agir efficacement en toute situation.
               </motion.p>
             </li>
             <li className={styles.li}>
@@ -171,8 +170,8 @@ export default function Description() {
                 }}
                 exit={{ opacity: 0, x: -100 }}
                 transition={{ duration: 0.5 }}
-                src="/image1.jpg"
-                alt="Vue pittoresque et charmante du Château de Projan entouré de collines"
+                src="/image1.png"
+                alt="Technicien équipé pour intervention anti-nuisibles"
                 width={300}
                 height={300}
                 sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 33vw"
@@ -189,7 +188,7 @@ export default function Description() {
                 transition={{ duration: 0.5 }}
                 className={styles.p}
               >
-                <span className={styles.span}> Matériel professionnel et techniques éprouvées</span>Nous utilisons des équipements de pointe et des méthodes éprouvées pour un chantier sécurisé, efficace et parfaitement exécuté, quelles que soient les conditions.
+                <span className={styles.span}> Matériel professionnel haut de gamme</span>Nous sommes équipés des dernières technologies pour garantir des interventions rapides, précises et sûres contre tous types d'infestations.
               </motion.p>
             </li>
           </ul>

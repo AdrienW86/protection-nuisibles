@@ -5,28 +5,26 @@ import styles from './gallery.module.css';
 
 export default function Gallery() {
   const images = [
-    { src: '/image1.jpg', alt: 'Image 1' },
-    { src: '/image2.jpg', alt: 'Image 2' },
-    { src: '/image3.jpg', alt: 'Image 3' },
-    { src: '/image4.jpg', alt: 'Image 4' },
-    { src: '/image5.jpg', alt: 'Image 5' },
-    { src: '/image6.jpg', alt: 'Image 1' },
-    { src: '/image7.jpg', alt: 'Image 2' },
-    { src: '/image8.jpg', alt: 'Image 3' },
-    { src: '/image9.jpg', alt: 'Image 4' },
-    { src: '/image10.jpg', alt: 'Image 5' },
+    { src: '/image1.png', alt: 'Image 1' },
+    { src: '/image2.png', alt: 'Image 2' },
+    { src: '/image3.png', alt: 'Image 3' },
+    { src: '/image4.png', alt: 'Image 4' },
+    { src: '/image5.png', alt: 'Image 5' },
+    { src: '/image6.png', alt: 'Image 1' },
+    { src: '/image7.png', alt: 'Image 2' },
+    { src: '/image8.png', alt: 'Image 3' },
+    { src: '/image9.png', alt: 'Image 4' },
+    { src: '/image10.png', alt: 'Image 5' },
   ];
 
   const [isOpen, setIsOpen] = useState(false);
   const [currentImage, setCurrentImage] = useState(null);
 
-  // Ouvrir la lightbox
   const openLightbox = (imageSrc) => {
     setCurrentImage(imageSrc);
     setIsOpen(true);
   };
 
-  // Fermer la lightbox
   const closeLightbox = () => {
     setIsOpen(false);
   };
@@ -46,8 +44,6 @@ export default function Gallery() {
           </div>
         ))}
       </div>
-
-      {/* Lightbox */}
       {isOpen && (
         <div className={styles.lightboxOverlay} onClick={closeLightbox}>
           <div className={styles.lightboxContent}>
@@ -58,5 +54,3 @@ export default function Gallery() {
     </div>
   );
 }
-
-
