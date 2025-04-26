@@ -5,9 +5,9 @@ import Script from 'next/script'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Elite couverture',
+  title: 'Protection Nuisibles',
   description:
-    "Elite Couverture – Spécialiste en couverture et peinture dans le 66. Interventions rapides et travaux de qualité dans tout le département des Pyrénées-Orientales. Toitures, façades, intérieurs : votre expert local.",
+    "Protection Nuisibles – Experts en élimination de nuisibles dans le 66. Interventions rapides et efficaces pour éradiquer rats, insectes, et autres nuisibles. Service de qualité, prévention et conseils personnalisés dans tout le département des Pyrénées-Orientales.",
 }
 
 export default function RootLayout({ children }) {
@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body className={inter.className}>
-        {/* Scripts Google Analytics (client-side only) */}
+        {/* Scripts Google Analytics (client-side only)
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-SD7E6L1ZYY"
           strategy="afterInteractive"
@@ -33,7 +33,7 @@ export default function RootLayout({ children }) {
             gtag('js', new Date());
             gtag('config', 'G-SD7E6L1ZYY');
           `}
-        </Script>
+        </Script> */}
 
         {children}
       </body>
