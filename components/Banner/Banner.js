@@ -57,7 +57,7 @@ export default function Carousel() {
               exit={{ opacity: 0, x: 50 }}
               transition={{ duration: 0.3 }}
             > 
-              Nos réalisations 
+              Nos interventions 
             </motion.a>
            
         </div>
