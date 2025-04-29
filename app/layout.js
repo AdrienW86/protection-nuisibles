@@ -21,9 +21,9 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body className={inter.className}>
-        {/* Scripts Google Analytics (client-side only)
+      
         <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-SD7E6L1ZYY"
+          src="https://www.googletagmanager.com/gtag/js?id=AW-17043170000"
           strategy="afterInteractive"
         />
         <Script id="google-analytics" strategy="afterInteractive">
@@ -31,9 +31,9 @@ export default function RootLayout({ children }) {
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'G-SD7E6L1ZYY');
+             gtag('config', 'AW-17043170000');
           `}
-        </Script> */}
+        </Script> 
 
         {children}
       </body>
