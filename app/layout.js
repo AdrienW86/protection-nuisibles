@@ -21,19 +21,27 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body className={inter.className}>
-      
+        {/* Chargement de Google Tag Manager */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=AW-17043170000"
           strategy="afterInteractive"
         />
+
         <Script id="google-analytics" strategy="afterInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-             gtag('config', 'AW-17043170000');
+            gtag('config', 'AW-17043170000');
           `}
-        </Script> 
+        </Script>
+
+        {/* Événement de conversion */}
+        <Script id="google-conversion" strategy="afterInteractive">
+          {`
+            gtag('event', 'conversion', {'send_to': 'AW-17043170000/pPJ0CNDQm8EaENDF6L4_'});
+          `}
+        </Script>
 
         {children}
       </body>
