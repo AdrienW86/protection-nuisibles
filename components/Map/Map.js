@@ -6,7 +6,7 @@ import styles from './map.module.css';
 export default function GoogleMap() {
   const address = {
     name: "Protection Nuisibles",
-    phone: "06 62 12 56 11",
+    phone: "07 57 51 64 14",
     fullAddress: "Pyrénées Orientales",
   };
 
@@ -29,8 +29,7 @@ export default function GoogleMap() {
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
-      </div>
-     
+      </div>     
     </div>
   );
 }
