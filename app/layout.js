@@ -21,13 +21,14 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body className={inter.className}>
-        {/* Chargement de Google Tag Manager */}
+        {/* Chargement du script Google Tag Manager */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=AW-17043170000"
           strategy="afterInteractive"
+          async
         />
-
-        <Script id="google-analytics" strategy="afterInteractive">
+        {/* Initialisation du dataLayer et configuration de gtag */}
+        <Script id="google-ads" strategy="afterInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
@@ -36,16 +37,8 @@ export default function RootLayout({ children }) {
           `}
         </Script>
 
-        {/* Événement de conversion */}
-        <Script id="google-conversion" strategy="afterInteractive">
-          {`
-            gtag('event', 'conversion', {'send_to': 'AW-17043170000/pPJ0CNDQm8EaENDF6L4_'});
-          `}
-        </Script>
-
         {children}
       </body>
     </html>
   )
 }
-
