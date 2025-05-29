@@ -11,19 +11,20 @@ export default function Menu() {
 
     <section className={styles.presentation}>
         <Image
-  src="/logo.png"
-  alt="Illustration des dangers des rats et souris"
-  width={600}            // largeur max souhaitée
-  height={338}           // hauteur proportionnelle (exemple ici pour ratio 16:9)
-  style={{ width: '100%', height: 'auto', maxWidth: '600px' }} // responsive max 600px
-  sizes="(max-width: 600px) 100vw, 600px"
-  className={styles.image}
+            src="/logo.png"
+            alt="Illustration des dangers des rats et souris"
+            width={600}            // largeur max souhaitée
+            height={338}           // hauteur proportionnelle (exemple ici pour ratio 16:9)
+            sizes="(max-width: 600px) 100vw, 600px"
+            className={styles.image}
 />
 
-      <p className={styles.description}>
-        Chez <strong>Protection Nuisibles</strong>, nous sommes experts en <strong>dératisation à Perpignan</strong> et dans tout le département 66. 
-        Nos interventions ciblées permettent d’<strong>éliminer les rats et les souris</strong> de manière rapide, sécurisée et durable.
-      </p>
+      <div className={styles.description}>
+        <p className={styles.pDescription}>
+            Chez <strong>Protection Nuisibles</strong>, nous sommes experts en <strong>dératisation à Perpignan</strong> et dans tout le département 66. 
+            Nos interventions ciblées permettent d’<strong>éliminer les rats et les souris</strong> de manière rapide, sécurisée et durable.
+        </p>
+      </div>
     </section>
 
 
