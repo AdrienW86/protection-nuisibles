@@ -29,7 +29,7 @@ export default function Carousel() {
 
   return (
     <div className={styles.carousel} id="carouselExampleFade">
-     
+      
         <div className={styles.btnContainer}>
             <motion.a 
               className={styles.btn} 

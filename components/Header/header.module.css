@@ -7,7 +7,7 @@
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    align-items: center;
+    
     font-weight: bold;
     color: rgb(82,113,255);
     background-color: white;
@@ -21,17 +21,18 @@
 
 .hamburger {
     position: absolute;
-    top: 2vh;
-    left: 20px;
+    top: 17vh;
+    right: 20px;
     width: 3vh;
     height: 3vh;
     z-index: 30;
     border: none;
     display: flex;
-    opacity: 0.7;
+    opacity: 1;
     flex-direction: column;
     background-color: transparent;
     justify-content: space-between;
+    
 }
     
 .open {
@@ -107,19 +108,22 @@
 }
 
 .logo {
+    position: absolute;
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 14vh;
     width: 14vh;
     position: relative;
-    left: 17vh
+    left: 20px;
 }
+
 
 .image {
     position: absolute;
     z-index: 2;
-    left: 2px;
+    right: 2px;
     height: 15vh;
-    width: 34vh
+    width: 34vh;
+    border: 1px solid black;
 }
