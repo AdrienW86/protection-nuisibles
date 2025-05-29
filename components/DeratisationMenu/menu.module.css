@@ -25,11 +25,14 @@
 
 .description {  
     position: absolute;
-    bottom: 0px;
+    bottom: 0;
     height: 100%;
     width: 100%;
+    display: flex;
+    justify-content: center; /* centre horizontalement */
+    align-items: center;     /* centre verticalement */
     text-align: center;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     font-weight: bold;
     line-height: 2.5rem;
     color: rgb(255, 255, 255); 
@@ -37,11 +40,11 @@
     background-color: rgba(0, 0, 0, 0.9);
 }
 
+
 .pDescription {
     padding: 12px;
-    position: absolute;
-    bottom: 100px
 }
+
 
 .h2 {
     padding: 12px;

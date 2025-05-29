@@ -11,10 +11,10 @@ export default function Menu() {
 
     <section className={styles.presentation}>
         <Image
-            src="/logo.png"
+            src="/image13.png"
             alt="Illustration des dangers des rats et souris"
-            width={600}            // largeur max souhaitée
-            height={338}           // hauteur proportionnelle (exemple ici pour ratio 16:9)
+            width={600} 
+            height={338} 
             sizes="(max-width: 600px) 100vw, 600px"
             className={styles.image}
 />
