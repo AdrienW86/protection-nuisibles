@@ -39,7 +39,7 @@ export default function Menu() {
           width={800} 
           height={450} 
           className={styles.image}
-          priority // optionnel, si tu veux que l'image soit chargée en priorité
+          priority 
         />
 
         <p className={styles.p}>
@@ -60,6 +60,14 @@ export default function Menu() {
 
       <section aria-labelledby="inspection-diagnostic">
         <h2 id="inspection-diagnostic" className={styles.h2}>1. Inspection et diagnostic précis</h2>
+        <Image 
+          src="/image13.png" 
+          alt="Illustration des dangers des rats et souris pour la santé et les bâtiments" 
+          width={800} 
+          height={450} 
+          className={styles.image}
+          priority 
+        />
         <p className={styles.p}>
           Chaque intervention commence par une inspection minutieuse de votre logement, local ou entreprise. 
           Nous identifions les <strong>zones d'infestation</strong>, les points d’accès et les traces d’activité afin de vous proposer un <strong>traitement adapté</strong>.
@@ -68,6 +76,14 @@ export default function Menu() {
 
       <section aria-labelledby="preparation-intervention">
         <h2 id="preparation-intervention" className={styles.h2}>2. Préparation de l’intervention</h2>
+        <Image 
+          src="/image16.png" 
+          alt="Illustration des dangers des rats et souris pour la santé et les bâtiments" 
+          width={800} 
+          height={450} 
+          className={styles.image}
+          priority 
+        />
         <p className={styles.p}>
           Avant le traitement, nous <strong>sécurisons les lieux</strong> et sélectionnons les techniques les plus efficaces selon le niveau d'infestation. 
           Nous utilisons des produits <strong>homologués</strong>, respectueux des normes sanitaires et de l’environnement.
@@ -76,6 +92,14 @@ export default function Menu() {
 
       <section aria-labelledby="elimination-rongeurs">
         <h2 id="elimination-rongeurs" className={styles.h2}>3. Élimination des rats et souris</h2>
+        <Image 
+          src="/image19.png" 
+          alt="Illustration des dangers des rats et souris pour la santé et les bâtiments" 
+          width={800} 
+          height={450} 
+          className={styles.image}
+          priority // optionnel, si tu veux que l'image soit chargée en priorité
+        />
         <ul className={styles.ul}>
           <li className={styles.li}>Installation de pièges et appâts professionnels</li>
           <li className={styles.li}>Utilisation de produits certifiés et sécurisés</li>
@@ -89,14 +113,30 @@ export default function Menu() {
 
       <section aria-labelledby="suivi-prevention">
         <h2 id="suivi-prevention" className={styles.h2}>4. Suivi et prévention</h2>
+         <Image 
+          src="/image18.png" 
+          alt="Illustration des dangers des rats et souris pour la santé et les bâtiments" 
+          width={800} 
+          height={450} 
+          className={styles.image}
+          priority 
+        />
         <p className={styles.p}>
           Une fois le traitement terminé, nous mettons en place des <strong>mesures de prévention</strong> : 
           colmatage des accès, conseils d’hygiène, installation de dispositifs de surveillance si nécessaire.
         </p>
       </section>
 
-      <section aria-labelledby="conseils-accompagnement">
+      <section aria-labelledby="conseils-accompagnement">    
         <h2 id="conseils-accompagnement" className={styles.h2}>5. Conseils et accompagnement personnalisé</h2>
+         <Image 
+          src="/image17.png" 
+          alt="Illustration des dangers des rats et souris pour la santé et les bâtiments" 
+          width={800} 
+          height={450} 
+          className={styles.image}
+          priority 
+        />
         <p className={styles.p}>
           Protection Nuisibles vous accompagne sur le long terme avec des recommandations adaptées à votre situation. 
           Notre objectif : vous garantir un environnement sain, sans rongeurs.

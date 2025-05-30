@@ -27,14 +27,14 @@ export default function Header() {
 
   return (
     <header className={styles.header}>
-      <Link href="/">
+      <Link href="/"className={styles.logoWrapper} >
         <motion.div
           ref={ref1}
           initial={{ opacity: 0, x: -100 }}
           animate={{ opacity: inView1 ? 1 : 0, x: inView1 ? 0 : -100 }}
           exit={{ opacity: 0, x: -100 }}
           transition={{ duration: 0.5 }}
-          className={styles.logoWrapper}
+          
         >
           <Image
             src="/logo.png"
@@ -48,8 +48,8 @@ export default function Header() {
           />
         </motion.div>
       </Link>
-
-      <Image
+<div className={styles.div}>
+  <Image
         src="/garantie.png"
         alt="Garantie certibiocide contre les nuisibles"
         title="Garantie Certibiocide"
@@ -58,6 +58,8 @@ export default function Header() {
         sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 33vw"
         className={styles.image}
       />
+</div>
+      
 
       <div className={styles.buttonBox}>
        <button
@@ -73,32 +75,31 @@ export default function Header() {
         </button>
       </div>
       <nav id="main-navigation" aria-label="Menu principal">
-  <AnimatePresence>
-    {isMenuOpen && (
-      <motion.div
-        className={styles.menu}
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
-      >
-        <ul className={styles.ul}>
-          {navLinks.map((link) => (
-            <li key={link.href}>
-              <Link
-                className={styles.li}
-                href={link.href}
-                onClick={handleMenuToggle}
-              >
-                {link.label}
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </motion.div>
-    )}
-  </AnimatePresence>
-</nav>
-
+        <AnimatePresence>
+          {isMenuOpen && (
+            <motion.div
+              className={styles.menu}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+            >
+              <ul className={styles.ul}>
+                {navLinks.map((link) => (
+                  <li key={link.href}>
+                    <Link
+                      className={styles.li}
+                      href={link.href}
+                      onClick={handleMenuToggle}
+                    >
+                      {link.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </nav>
     </header>
   );
 }
