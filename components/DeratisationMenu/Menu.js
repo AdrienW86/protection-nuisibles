@@ -140,7 +140,7 @@ export default function Menu() {
       </section>
 
       <p className={styles.p}>
-        Contactez notre équipe pour toute <strong className={styles.strong}>intervention de dératisation à Perpignan</strong>, Canet-en-Roussillon, Saint-Estève, ou ailleurs dans les <strong>Pyrénées-Orientales</strong>.
+        Contactez notre équipe pour toute <strong className={styles.strong}>intervention de dératisation à Perpignan</strong>, Canet-en-Roussillon, Saint-Estève, ou ailleurs dans les <strong className={styles.strong}>Pyrénées-Orientales</strong>.
         Nous sommes disponibles rapidement pour des <strong className={styles.strong}>traitements anti-rats efficaces et discrets</strong>.
       </p>
     </section>

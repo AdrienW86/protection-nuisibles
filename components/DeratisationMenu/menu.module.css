@@ -68,12 +68,11 @@
 .p {
     color: black;
     font-weight: bold;
-    padding: 12px;
     font-size: 1.2em;
     line-height: 1.7em;
-    margin: 15px;
+    padding: 15px;
     border-bottom: 1px solid white;
-    background-color: rgb(255, 255, 255)
+    background: linear-gradient(to right, white, rgb(0, 73, 174));
 }
 
 .ul {
@@ -92,10 +91,7 @@
 }
 
 .intro {
-   
     color: white;
-    
-   
 }
 
 
