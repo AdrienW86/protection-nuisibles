@@ -25,6 +25,7 @@ export default function Menu() {
           Dératisation à Perpignan et dans les Pyrénées-Orientales (66)
         </h1>
       <section aria-labelledby="dangers-rongeurs" className={styles.intro}>       
+        <div className={styles.box}>
           <Image 
             src="/image10.png" 
             alt="Illustration des dangers des rats et souris pour la santé et les bâtiments" 
@@ -36,6 +37,7 @@ export default function Menu() {
           <h2 id="dangers-rongeurs" className={styles.h2}>
           Pourquoi faut-il éliminer les rongeurs rapidement ?
         </h2>
+        </div>
         <p className={styles.p}>
           Les <strong className={styles.strong}>rongeurs comme les rats et les souris</strong> représentent un réel danger pour la santé humaine et l'intégrité des bâtiments. 
           Ils sont porteurs de <strong className={styles.strong}>maladies graves</strong> telles que la leptospirose, la salmonellose ou encore la peste. 
@@ -53,7 +55,7 @@ export default function Menu() {
       </section>
 
       <section aria-labelledby="inspection-diagnostic">
-        <h2 id="inspection-diagnostic" className={styles.h2}>1. Inspection et diagnostic précis</h2>
+        <h2 id="inspection-diagnostic" className={styles.h2}>Inspection et diagnostic précis</h2>
         <Image 
           src="/image13.png" 
           alt="Illustration des dangers des rats et souris pour la santé et les bâtiments" 
@@ -64,12 +66,12 @@ export default function Menu() {
         />
         <p className={styles.p}>
           Chaque intervention commence par une inspection minutieuse de votre logement, local ou entreprise. 
-          Nous identifions les <strong>zones d'infestation</strong>, les points d’accès et les traces d’activité afin de vous proposer un <strong>traitement adapté</strong>.
+          Nous identifions les <strong className={styles.strong}>zones d'infestation</strong>, les points d’accès et les traces d’activité afin de vous proposer un <strong className={styles.strong}>traitement adapté</strong>.
         </p>
       </section>
 
       <section aria-labelledby="preparation-intervention">
-        <h2 id="preparation-intervention" className={styles.h2}>2. Préparation de l’intervention</h2>
+        <h2 id="preparation-intervention" className={styles.h2}>Préparation de l’intervention</h2>
         <Image 
           src="/image16.png" 
           alt="Illustration des dangers des rats et souris pour la santé et les bâtiments" 
@@ -79,13 +81,13 @@ export default function Menu() {
           priority 
         />
         <p className={styles.p}>
-          Avant le traitement, nous <strong>sécurisons les lieux</strong> et sélectionnons les techniques les plus efficaces selon le niveau d'infestation. 
-          Nous utilisons des produits <strong>homologués</strong>, respectueux des normes sanitaires et de l’environnement.
+          Avant le traitement, nous <strong className={styles.strong}>sécurisons les lieux</strong> et sélectionnons les techniques les plus efficaces selon le niveau d'infestation. 
+          Nous utilisons des produits <strong className={styles.strong}>homologués</strong>, respectueux des normes sanitaires et de l’environnement.
         </p>
       </section>
 
       <section aria-labelledby="elimination-rongeurs">
-        <h2 id="elimination-rongeurs" className={styles.h2}>3. Élimination des rats et souris</h2>
+        <h2 id="elimination-rongeurs" className={styles.h2}>Élimination des rats et souris</h2>
         <Image 
           src="/image19.png" 
           alt="Illustration des dangers des rats et souris pour la santé et les bâtiments" 
@@ -101,12 +103,12 @@ export default function Menu() {
           <li className={styles.li}>Contrôle post-intervention pour garantir l’efficacité</li>
         </ul>
         <p className={styles.p}>
-          Nos techniciens qualifiés assurent une <strong>dératisation rapide et efficace</strong>, avec un suivi rigoureux pour éviter toute récidive.
+          Nos techniciens qualifiés assurent une <strong className={styles.strong}>dératisation rapide et efficace</strong>, avec un suivi rigoureux pour éviter toute récidive.
         </p>
       </section>
 
       <section aria-labelledby="suivi-prevention">
-        <h2 id="suivi-prevention" className={styles.h2}>4. Suivi et prévention</h2>
+        <h2 id="suivi-prevention" className={styles.h2}>Suivi et prévention</h2>
          <Image 
           src="/image18.png" 
           alt="Illustration des dangers des rats et souris pour la santé et les bâtiments" 
@@ -116,13 +118,13 @@ export default function Menu() {
           priority 
         />
         <p className={styles.p}>
-          Une fois le traitement terminé, nous mettons en place des <strong>mesures de prévention</strong> : 
+          Une fois le traitement terminé, nous mettons en place des <strong className={styles.strong}>mesures de prévention</strong> : 
           colmatage des accès, conseils d’hygiène, installation de dispositifs de surveillance si nécessaire.
         </p>
       </section>
 
       <section aria-labelledby="conseils-accompagnement">    
-        <h2 id="conseils-accompagnement" className={styles.h2}>5. Conseils et accompagnement personnalisé</h2>
+        <h2 id="conseils-accompagnement" className={styles.h2}>Conseils et accompagnement personnalisé</h2>
          <Image 
           src="/image17.png" 
           alt="Illustration des dangers des rats et souris pour la santé et les bâtiments" 
@@ -138,8 +140,8 @@ export default function Menu() {
       </section>
 
       <p className={styles.p}>
-        Contactez notre équipe pour toute <strong>intervention de dératisation à Perpignan</strong>, Canet-en-Roussillon, Saint-Estève, ou ailleurs dans les <strong>Pyrénées-Orientales</strong>.
-        Nous sommes disponibles rapidement pour des <strong>traitements anti-rats efficaces et discrets</strong>.
+        Contactez notre équipe pour toute <strong className={styles.strong}>intervention de dératisation à Perpignan</strong>, Canet-en-Roussillon, Saint-Estève, ou ailleurs dans les <strong>Pyrénées-Orientales</strong>.
+        Nous sommes disponibles rapidement pour des <strong className={styles.strong}>traitements anti-rats efficaces et discrets</strong>.
       </p>
     </section>
   )
