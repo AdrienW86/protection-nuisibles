@@ -5,56 +5,50 @@ import styles from './menu.module.css'
 export default function Menu() {
   return (
     <section className={styles.container} aria-label="Dératisation à Perpignan et dans les Pyrénées-Orientales">
-      <h1 className={styles.title}>
-        Dératisation à Perpignan et dans les Pyrénées-Orientales (66)
-      </h1>
-
-    <section className={styles.presentation}>
+      <section className={styles.presentation}>
         <Image
-            src="/image13.png"
-            alt="Illustration des dangers des rats et souris"
-            width={600} 
-            height={338} 
-            sizes="(max-width: 600px) 100vw, 600px"
+          src="/image13.png"
+          alt="Illustration des dangers des rats et souris"
+          width={600} 
+          height={338} 
+          sizes="(max-width: 600px) 100vw, 600px"
+          className={styles.image}
+        />
+        <div className={styles.description}>
+          <p className={styles.pDescription}>
+            Chez <strong className={styles.strong}>Protection Nuisibles</strong>, nous sommes experts en <strong className={styles.strong}>dératisation à Perpignan</strong> et dans tout le département 66. 
+            Nos interventions ciblées permettent d’<strong className={styles.strong}>éliminer les rats et les souris</strong> de manière rapide, sécurisée et durable.
+          </p>
+        </div>
+      </section>
+        <h1 className={styles.title}>
+          Dératisation à Perpignan et dans les Pyrénées-Orientales (66)
+        </h1>
+      <section aria-labelledby="dangers-rongeurs" className={styles.intro}>       
+          <Image 
+            src="/image10.png" 
+            alt="Illustration des dangers des rats et souris pour la santé et les bâtiments" 
+            width={800} 
+            height={450} 
             className={styles.image}
-/>
-
-      <div className={styles.description}>
-        <p className={styles.pDescription}>
-            Chez <strong>Protection Nuisibles</strong>, nous sommes experts en <strong>dératisation à Perpignan</strong> et dans tout le département 66. 
-            Nos interventions ciblées permettent d’<strong>éliminer les rats et les souris</strong> de manière rapide, sécurisée et durable.
-        </p>
-      </div>
-    </section>
-
-
-      <section aria-labelledby="dangers-rongeurs" className={styles.intro}>
-        <h2 id="dangers-rongeurs" className={styles.h2}>
+            priority 
+          />
+          <h2 id="dangers-rongeurs" className={styles.h2}>
           Pourquoi faut-il éliminer les rongeurs rapidement ?
         </h2>
-
-        <Image 
-          src="/image10.png" 
-          alt="Illustration des dangers des rats et souris pour la santé et les bâtiments" 
-          width={800} 
-          height={450} 
-          className={styles.image}
-          priority 
-        />
-
         <p className={styles.p}>
-          Les <strong>rongeurs comme les rats et les souris</strong> représentent un réel danger pour la santé humaine et l'intégrité des bâtiments. 
-          Ils sont porteurs de <strong>maladies graves</strong> telles que la leptospirose, la salmonellose ou encore la peste. 
+          Les <strong className={styles.strong}>rongeurs comme les rats et les souris</strong> représentent un réel danger pour la santé humaine et l'intégrité des bâtiments. 
+          Ils sont porteurs de <strong className={styles.strong}>maladies graves</strong> telles que la leptospirose, la salmonellose ou encore la peste. 
           Leur présence peut contaminer les aliments, les surfaces et l’eau, ce qui pose un risque sanitaire important.
         </p>
         <p className={styles.p}>
-          En plus des risques pour la santé, les rongeurs provoquent de nombreux <strong>dégâts matériels</strong> : 
+          En plus des risques pour la santé, les rongeurs provoquent de nombreux <strong className={styles.strong}>dégâts matériels</strong> : 
           câbles électriques rongés (risque d’incendie), isolations détruites, murs et sols endommagés. 
-          Une <strong>invasion de rats ou de souris</strong> non traitée à temps peut rapidement s’aggraver et entraîner des coûts importants.
+          Une <strong className={styles.strong}>invasion de rats ou de souris</strong> non traitée à temps peut rapidement s’aggraver et entraîner des coûts importants.
         </p>
         <p className={styles.p}>
-          Pour toutes ces raisons, il est essentiel de faire appel à un professionnel de la <strong>dératisation à Perpignan</strong> dès les premiers signes d’infestation. 
-          <strong>Protection Nuisibles</strong> intervient rapidement et efficacement pour éliminer le problème à la source.
+          Pour toutes ces raisons, il est essentiel de faire appel à un professionnel de la <strong className={styles.strong}>dératisation à Perpignan</strong> dès les premiers signes d’infestation. 
+          <strong className={styles.strong}>Protection Nuisibles</strong> intervient rapidement et efficacement pour éliminer le problème à la source.
         </p>
       </section>
 

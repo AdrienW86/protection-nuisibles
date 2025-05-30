@@ -24,7 +24,7 @@ export default function page() {
     <>
       <Header />
       <main>
-        <SimpleBanner />
+       
         <DeratisationMenu />
       </main>
       <Footer />
