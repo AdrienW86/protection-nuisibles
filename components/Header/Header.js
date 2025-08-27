@@ -48,19 +48,6 @@ export default function Header() {
           />
         </motion.div>
       </Link>
-<div className={styles.div}>
-  <Image
-        src="/garantie.png"
-        alt="Garantie certibiocide contre les nuisibles"
-        title="Garantie Certibiocide"
-        width={160}
-        height={120}
-        sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 33vw"
-        className={styles.image}
-      />
-</div>
-      
-
       <div className={styles.buttonBox}>
        <button
           className={`${styles.hamburger} ${isMenuOpen ? styles.open : styles.close}`}

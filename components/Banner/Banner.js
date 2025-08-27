@@ -61,6 +61,18 @@ export default function Carousel() {
             </motion.a>
            
         </div>
+       <div className={styles.label}>
+  <Image
+    src="/garantie.png"
+    alt="Garantie certibiocide contre les nuisibles"
+    title="Garantie Certibiocide"
+    width={300}
+    height={120}
+    sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 33vw"
+    className={styles.labelImage} // <-- optionnel si tu veux styliser l'image séparément
+  />
+</div>
+
       <div className={styles.carouselInner}>
         {images.map((image, index) => (
           <div

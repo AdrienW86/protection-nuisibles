@@ -33,7 +33,7 @@ export default function MentionsLegales() {
 
       <h2 className={styles.subtitle}>Conditions d'utilisation</h2>
       <p className={styles.text}>
-        Le site Protection Nuisibles est accessible à l'URL : https://protectionnuisibles.fr.<br/>
+        Le site Protection Nuisibles est accessible à l'URL : https://protection-nuisibles.fr.<br/>
         Son utilisation est régie par les présentes conditions. En utilisant le site, vous acceptez ces conditions. Elles peuvent être modifiées à tout moment sans préavis.
       </p>
 
