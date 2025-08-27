@@ -33,8 +33,7 @@ export default function Header() {
           initial={{ opacity: 0, x: -100 }}
           animate={{ opacity: inView1 ? 1 : 0, x: inView1 ? 0 : -100 }}
           exit={{ opacity: 0, x: -100 }}
-          transition={{ duration: 0.5 }}
-          
+          transition={{ duration: 0.5 }}         
         >
           <Image
             src="/logo.png"
@@ -48,6 +47,9 @@ export default function Header() {
           />
         </motion.div>
       </Link>
+       <a href="tel:+33757516414" className={styles.callButton}>
+      📞 Appeler
+    </a>
       <div className={styles.buttonBox}>
        <button
           className={`${styles.hamburger} ${isMenuOpen ? styles.open : styles.close}`}
