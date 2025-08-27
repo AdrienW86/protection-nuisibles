@@ -1,7 +1,7 @@
 .main, .container {
   display: flex;
   flex-direction: column;
-  max-width: 120vh;
+  max-width: 100vh;
   margin: auto;
   background-color: white;
 }
