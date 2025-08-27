@@ -1,0 +1,41 @@
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: 'Inter', sans-serif;
+  color: #f8f8f8;
+  line-height: 1.6;
+}
+
+.title {
+  font-size: 2rem;
+  margin: 1rem;
+  color: #f8f8f8;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 1.4rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: #0070f3;
+}
+
+.text {
+  margin-bottom: 1rem;
+}
+
+.list {
+  padding-left: 1.5rem;
+  list-style-type: disc;
+  margin-bottom: 1rem;
+}
+
+.link {
+  color: #0070f3;
+  text-decoration: underline;
+}
+
+.link:hover {
+  text-decoration: none;
+}

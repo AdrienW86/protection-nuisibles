@@ -1,6 +1,8 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
 import Script from 'next/script'
+import Header from '@/components/Header/Header'
+import Footer from '@/components/Footer/Footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -36,8 +38,9 @@ export default function RootLayout({ children }) {
             gtag('config', 'AW-17043170000');
           `}
         </Script>
-
-        {children}
+        <Header />
+          {children}
+        <Footer />
       </body>
     </html>
   )

@@ -1,7 +1,5 @@
-import Header from '@/components/Header/Header'
 import SimpleBanner from '@/components/SimpleBanner/SimpleBanner'
 import DesinsectisationMenu from '@/components/DesinsectisationMenu/Menu'
-import Footer from '@/components/Footer/Footer'
 
 export const metadata = {
   title: 'Désinsectisation – Insectes & Parasites',
@@ -11,10 +9,8 @@ export const metadata = {
 export default function page() {
   return (
     <main>
-      <Header />
       <SimpleBanner />
-      <DesinsectisationMenu />
-      <Footer />     
+      <DesinsectisationMenu />   
     </main>
   )
 }

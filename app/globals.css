@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
 :root {
+
+  --first: rgb(0,73,174);
+  --second: rgb(215,42,1);
+
   --max-width: 1100px;
   --border-radius: 12px;
   --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',

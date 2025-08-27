@@ -1,7 +1,4 @@
-import Header from '@/components/Header/Header'
-import SimpleBanner from '@/components/SimpleBanner/SimpleBanner'
 import DeratisationMenu from '@/components/DeratisationMenu/Menu'
-import Footer from '@/components/Footer/Footer'
 
 export const metadata = {
   title: 'Dératisation à Perpignan - Protection Nuisibles 66',
@@ -21,13 +18,10 @@ export const metadata = {
 
 export default function page() {
   return (
-    <>
-      <Header />
-      <main>
-       
+    <>    
+      <main>       
         <DeratisationMenu />
-      </main>
-      <Footer />
+      </main>    
     </>
   )
 }

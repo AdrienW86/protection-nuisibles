@@ -10,11 +10,11 @@
     color: white;
     padding: 12px;
     text-align: center;
-    background-color: rgb(0,73,174)
+     background-color: var(--first)
 }
 
 .box {
-   background-color: rgb(0,73,174)
+   background-color: var(--first)
 }
 .presentation {
     position: relative;
@@ -48,21 +48,19 @@
 }
 
 .strong {
-    color: rgb(215,42,1);
+    color: var(--second)
 }
-
 
 .pDescription {
     max-width: 600px;
     padding: 12px;  
 }
 
-
 .h2 {
     padding: 12px;
     text-align: center;
     color: rgb(255, 255, 255);
-    background-color:rgb(0,73,174)
+    background-color: var(--first)
 }
 
 .p {
@@ -72,7 +70,7 @@
     line-height: 1.7em;
     padding: 15px;
     border-bottom: 1px solid white;
-    background: linear-gradient(to right, white, rgb(0, 73, 174));
+    background: linear-gradient(to right, white, var(--first));
 }
 
 .ul {
@@ -83,7 +81,7 @@
 
 .li {
     font-weight: bold;
-    color: rgb(0,73,174);
+    color: var(--first);
     padding: 8px;
     text-decoration: underline;
     font-size: 1.2em;
@@ -93,5 +91,3 @@
 .intro {
     color: white;
 }
-
-

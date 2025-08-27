@@ -1,7 +1,5 @@
-import Header from '@/components/Header/Header'
 import SimpleBanner from '@/components/SimpleBanner/SimpleBanner'
 import FrelonsMenu from '@/components/FrelonsMenu/Menu'
-import Footer from '@/components/Footer/Footer'
 
 export const metadata = {
   title: 'Destruction de nids de frelons – Protection Nuisibles',
@@ -11,10 +9,8 @@ export const metadata = {
 export default function page() {
   return (
     <main>
-      <Header />
       <SimpleBanner />
-      <FrelonsMenu />
-      <Footer />     
+      <FrelonsMenu /> 
     </main>
   )
 }

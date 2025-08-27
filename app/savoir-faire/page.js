@@ -1,7 +1,5 @@
-import Header from '@/components/Header/Header'
 import SimpleBanner from '@/components/SimpleBanner/SimpleBanner'
 import About from '@/components/About/About'
-import Footer from '@/components/Footer/Footer'
 
 export const metadata = {
   title: 'Notre savoir-faire – Protection Nuisibles',
@@ -11,10 +9,8 @@ export const metadata = {
 export default function page() {
   return (
     <main>
-      <Header />
       <SimpleBanner />
-      <About />
-      <Footer />     
+      <About />    
     </main>
   )
 }
