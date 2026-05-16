@@ -6,9 +6,9 @@ export const metadata = {
   description: "Destruction rapide et sécurisée des nids de frelons et guêpes dans tout le 66. Intervention d'urgence sur Perpignan et alentours.",
 }
 
-export default function page() {
+export default function FrelonsPage() {
   return (
-    <main>
+    <main className="w-full">
       <SimpleBanner />
       <FrelonsMenu /> 
     </main>

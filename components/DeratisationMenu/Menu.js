@@ -1,148 +1,155 @@
 import React from 'react'
 import Image from 'next/image'
-import styles from './menu.module.css'
 
 export default function Menu() {
   return (
-    <section className={styles.container} aria-label="Dératisation à Perpignan et dans les Pyrénées-Orientales">
-      <section className={styles.presentation}>
-        <Image
-          src="/image13.png"
-          alt="Illustration des dangers des rats et souris"
-          width={600} 
-          height={338} 
-          sizes="(max-width: 600px) 100vw, 600px"
-          className={styles.image}
-        />
-        <div className={styles.description}>
-          <p className={styles.pDescription}>
-            Chez <strong className={styles.strong}>Protection Nuisibles</strong>, nous sommes experts en <strong className={styles.strong}>dératisation à Perpignan</strong> et dans tout le département 66. 
-            Nos interventions ciblées permettent d’<strong className={styles.strong}>éliminer les rats et les souris</strong> de manière rapide, sécurisée et durable.
+    /* pt-28 pour passer sous ton Header fixe. max-w-5xl pour une mise en page aérée */
+    <section className="pt-28 pb-20 px-4 sm:px-6 max-w-5xl mx-auto w-full text-slate-700 leading-relaxed" aria-label="Dératisation à Perpignan et dans les Pyrénées-Orientales">
+      
+      {/* 1. TITRE PRINCIPAL H1 TOUT EN HAUT (Crucial pour le SEO) */}
+      <h1 className="text-3xl sm:text-4xl md:text-5xl font-black text-slate-900 tracking-tight text-center mb-12 border-b border-slate-100 pb-6">
+        Dératisation à Perpignan et dans les Pyrénées-Orientales (66)
+      </h1>
+
+      {/* 2. SECTION PRÉSENTATION / ACCROCHE */}
+      <section className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mb-16 bg-slate-50 p-6 rounded-2xl border border-slate-100">
+        <div className="relative w-full h-[250px] sm:h-[300px] rounded-xl overflow-hidden shadow-xs border border-slate-200">
+          <Image
+            src="/image13.png"
+            alt="Illustration des dangers des rats et souris"
+            fill
+            sizes="(max-width: 768px) 100vw, 500px"
+            className="object-cover"
+            priority
+          />
+        </div>
+        <div className="text-base sm:text-lg text-slate-800 font-medium">
+          <p>
+            Chez <strong className="text-brand-blue font-semibold">Protection Nuisibles</strong>, nous sommes experts en <strong className="text-slate-900 font-bold">dératisation à Perpignan</strong> et dans tout le département 66. 
+            Nos interventions ciblées permettent d’<strong className="text-brand-blue font-semibold">éliminer les rats et les souris</strong> de manière rapide, sécurisée et durable.
           </p>
         </div>
       </section>
-        <h1 className={styles.title}>
-          Dératisation à Perpignan et dans les Pyrénées-Orientales (66)
-        </h1>
-      <section aria-labelledby="dangers-rongeurs" className={styles.intro}>       
-        <div className={styles.box}>
-          <Image 
-            src="/image10.png" 
-            alt="Illustration des dangers des rats et souris pour la santé et les bâtiments" 
-            width={800} 
-            height={450} 
-            className={styles.image}
-            priority 
-          />
-          <h2 id="dangers-rongeurs" className={styles.h2}>
-          Pourquoi faut-il éliminer les rongeurs rapidement ?
-        </h2>
+
+      {/* 3. LES DANGERS DES RONGEURS */}
+      <section aria-labelledby="dangers-rongeurs" className="mb-16">       
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center bg-white">
+          <div className="md:col-span-1 relative w-full h-[220px] rounded-xl overflow-hidden border border-slate-200 shadow-xs">
+            <Image 
+              src="/image10.png" 
+              alt="Illustration des dangers des rats et souris pour la santé et les bâtiments" 
+              fill
+              sizes="(max-width: 768px) 100vw, 300px"
+              className="object-cover"
+            />
+          </div>
+          <div className="md:col-span-2">
+            <h2 id="dangers-rongeurs" className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight mb-4">
+              Pourquoi faut-il éliminer les rongeurs rapidement ?
+            </h2>
+            <div className="space-y-3 text-base">
+              <p>
+                Les <strong className="text-slate-900 font-semibold">rongeurs comme les rats et les souris</strong> représentent un réel danger pour la santé humaine et l'intégrité des bâtiments. 
+                Ils sont porteurs de <strong className="text-slate-900 font-semibold">maladies graves</strong> telles que la leptospirose, la salmonellose ou encore la peste. 
+                Leur présence peut contaminer les aliments, les surfaces et l’eau, ce qui pose un risque sanitaire important.
+              </p>
+              <p>
+                En plus des risques pour la santé, les rongeurs provoquent de nombreux <strong className="text-slate-900 font-semibold">dégâts matériels</strong> : 
+                câbles électriques rongés (risque d’incendie), isolations détruites, murs et sols endommagés. 
+                Une <strong className="text-slate-900 font-semibold">invasion de rats ou de souris</strong> non traitée à temps peut rapidement s’aggraver et entraîner des coûts importants.
+              </p>
+              <p>
+                Pour toutes ces raisons, il est essentiel de faire appel à un professionnel dès les premiers signes d’infestation. 
+                <strong className="text-brand-blue font-medium">Protection Nuisibles</strong> intervient rapidement et efficacement pour éliminer le problème à la source.
+              </p>
+            </div>
+          </div>
         </div>
-        <p className={styles.p}>
-          Les <strong className={styles.strong}>rongeurs comme les rats et les souris</strong> représentent un réel danger pour la santé humaine et l'intégrité des bâtiments. 
-          Ils sont porteurs de <strong className={styles.strong}>maladies graves</strong> telles que la leptospirose, la salmonellose ou encore la peste. 
-          Leur présence peut contaminer les aliments, les surfaces et l’eau, ce qui pose un risque sanitaire important.
-        </p>
-        <p className={styles.p}>
-          En plus des risques pour la santé, les rongeurs provoquent de nombreux <strong className={styles.strong}>dégâts matériels</strong> : 
-          câbles électriques rongés (risque d’incendie), isolations détruites, murs et sols endommagés. 
-          Une <strong className={styles.strong}>invasion de rats ou de souris</strong> non traitée à temps peut rapidement s’aggraver et entraîner des coûts importants.
-        </p>
-        <p className={styles.p}>
-          Pour toutes ces raisons, il est essentiel de faire appel à un professionnel de la <strong className={styles.strong}>dératisation à Perpignan</strong> dès les premiers signes d’infestation. 
-          <strong className={styles.strong}>Protection Nuisibles</strong> intervient rapidement et efficacement pour éliminer le problème à la source.
-        </p>
       </section>
 
-      <section aria-labelledby="inspection-diagnostic">
-        <h2 id="inspection-diagnostic" className={styles.h2}>Inspection et diagnostic précis</h2>
-        <Image 
-          src="/image13.png" 
-          alt="Illustration des dangers des rats et souris pour la santé et les bâtiments" 
-          width={800} 
-          height={450} 
-          className={styles.image}
-          priority 
-        />
-        <p className={styles.p}>
-          Chaque intervention commence par une inspection minutieuse de votre logement, local ou entreprise. 
-          Nous identifions les <strong className={styles.strong}>zones d'infestation</strong>, les points d’accès et les traces d’activité afin de vous proposer un <strong className={styles.strong}>traitement adapté</strong>.
-        </p>
+      {/* 4. NOTRE PROCESSUS D'INTERVENTION (Grille à puces) */}
+      <h2 className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight mb-8 text-center">
+        Notre protocole d'intervention professionnel
+      </h2>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
+        
+        {/* ÉTAPE 1 */}
+        <div className="bg-slate-50/60 p-5 rounded-2xl border border-slate-100 flex gap-4 items-start">
+          <div className="relative w-24 h-24 rounded-lg overflow-hidden shrink-0 border border-slate-200">
+            <Image src="/image13.png" alt="Inspection" fill className="object-cover" />
+          </div>
+          <div>
+            <h3 className="font-bold text-slate-900 text-base mb-1">1. Inspection & Diagnostic</h3>
+            <p className="text-sm text-slate-600">Nous identifions les zones d'infestation, les points d’accès et les traces d’activité afin de vous proposer un traitement sur mesure.</p>
+          </div>
+        </div>
+
+        {/* ÉTAPE 2 */}
+        <div className="bg-slate-50/60 p-5 rounded-2xl border border-slate-100 flex gap-4 items-start">
+          <div className="relative w-24 h-24 rounded-lg overflow-hidden shrink-0 border border-slate-200">
+            <Image src="/image16.png" alt="Préparation" fill className="object-cover" />
+          </div>
+          <div>
+            <h3 className="font-bold text-slate-900 text-base mb-1">2. Préparation sécurisée</h3>
+            <p className="text-sm text-slate-600">Nous sécurisons les lieux et sélectionnons des technologies homologuées, respectueuses des normes sanitaires et de votre entourage.</p>
+          </div>
+        </div>
+
+        {/* ÉTAPE 3 */}
+        <div className="bg-slate-50/60 p-5 rounded-2xl border border-slate-100 flex gap-4 items-start">
+          <div className="relative w-24 h-24 rounded-lg overflow-hidden shrink-0 border border-slate-200">
+            <Image src="/image19.png" alt="Élimination" fill className="object-cover" />
+          </div>
+          <div>
+            <h3 className="font-bold text-slate-900 text-base mb-1">3. Élimination radicale</h3>
+            <p className="text-sm text-slate-600">Installation de postes d'appâtage sécurisés, pièges professionnels et traitements ciblés avec un contrôle post-intervention rigoureux.</p>
+          </div>
+        </div>
+
+        {/* ÉTAPE 4 */}
+        <div className="bg-slate-50/60 p-5 rounded-2xl border border-slate-100 flex gap-4 items-start">
+          <div className="relative w-24 h-24 rounded-lg overflow-hidden shrink-0 border border-slate-200">
+            <Image src="/image18.png" alt="Prévention" fill className="object-cover" />
+          </div>
+          <div>
+            <h3 className="font-bold text-slate-900 text-base mb-1">4. Suivi & Prévention</h3>
+            <p className="text-sm text-slate-600">Colmatage des accès (remontées de tuyaux, fentes), conseils d’hygiène appliqués et pose de systèmes de surveillance à long terme.</p>
+          </div>
+        </div>
+
+      </div>
+
+      {/* 5. DERNIÈRE SECTION CONSEIL */}
+      <section aria-labelledby="conseils-accompagnement" className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center bg-slate-50 p-6 rounded-2xl border border-slate-100 mb-12">    
+        <div className="md:col-span-2">
+          <h2 id="conseils-accompagnement" className="text-xl font-bold text-slate-900 tracking-tight mb-3">
+            Conseils et accompagnement personnalisé
+          </h2>
+          <p className="text-base">
+            Protection Nuisibles vous accompagne sur le long terme avec des recommandations adaptées à votre environnement. 
+            Notre objectif : vous garantir durablement un espace de vie sain, sans rongeurs.
+          </p>
+        </div>
+        <div className="md:col-span-1 relative w-full h-[150px] rounded-xl overflow-hidden border border-slate-200 shadow-xs">
+          <Image 
+            src="/image17.png" 
+            alt="Technicien prodiguant des conseils anti-rongeurs" 
+            fill
+            sizes="(max-width: 768px) 100vw, 300px"
+            className="object-cover"
+          />
+        </div>
       </section>
 
-      <section aria-labelledby="preparation-intervention">
-        <h2 id="preparation-intervention" className={styles.h2}>Préparation de l’intervention</h2>
-        <Image 
-          src="/image16.png" 
-          alt="Illustration des dangers des rats et souris pour la santé et les bâtiments" 
-          width={800} 
-          height={450} 
-          className={styles.image}
-          priority 
-        />
-        <p className={styles.p}>
-          Avant le traitement, nous <strong className={styles.strong}>sécurisons les lieux</strong> et sélectionnons les techniques les plus efficaces selon le niveau d'infestation. 
-          Nous utilisons des produits <strong className={styles.strong}>homologués</strong>, respectueux des normes sanitaires et de l’environnement.
+      {/* 6. CONCLUSION / CALL TO ACTION */}
+      <div className="text-center bg-brand-blue text-white p-6 rounded-2xl shadow-xs mt-8">
+        <p className="text-base sm:text-lg font-medium leading-relaxed">
+          Contactez notre équipe pour toute <strong className="underline">intervention de dératisation à Perpignan</strong>, Canet-en-Roussillon, Saint-Estève, ou ailleurs dans les <strong className="font-bold">Pyrénées-Orientales</strong>.<br className="hidden sm:inline"/>
+          Nous sommes disponibles rapidement pour des traitements anti-rats efficaces, discrets et garantis.
         </p>
-      </section>
+      </div>
 
-      <section aria-labelledby="elimination-rongeurs">
-        <h2 id="elimination-rongeurs" className={styles.h2}>Élimination des rats et souris</h2>
-        <Image 
-          src="/image19.png" 
-          alt="Illustration des dangers des rats et souris pour la santé et les bâtiments" 
-          width={800} 
-          height={450} 
-          className={styles.image}
-          priority // optionnel, si tu veux que l'image soit chargée en priorité
-        />
-        <ul className={styles.ul}>
-          <li className={styles.li}>Installation de pièges et appâts professionnels</li>
-          <li className={styles.li}>Utilisation de produits certifiés et sécurisés</li>
-          <li className={styles.li}>Traitement ciblé contre les rongeurs dans les zones sensibles</li>
-          <li className={styles.li}>Contrôle post-intervention pour garantir l’efficacité</li>
-        </ul>
-        <p className={styles.p}>
-          Nos techniciens qualifiés assurent une <strong className={styles.strong}>dératisation rapide et efficace</strong>, avec un suivi rigoureux pour éviter toute récidive.
-        </p>
-      </section>
-
-      <section aria-labelledby="suivi-prevention">
-        <h2 id="suivi-prevention" className={styles.h2}>Suivi et prévention</h2>
-         <Image 
-          src="/image18.png" 
-          alt="Illustration des dangers des rats et souris pour la santé et les bâtiments" 
-          width={800} 
-          height={450} 
-          className={styles.image}
-          priority 
-        />
-        <p className={styles.p}>
-          Une fois le traitement terminé, nous mettons en place des <strong className={styles.strong}>mesures de prévention</strong> : 
-          colmatage des accès, conseils d’hygiène, installation de dispositifs de surveillance si nécessaire.
-        </p>
-      </section>
-
-      <section aria-labelledby="conseils-accompagnement">    
-        <h2 id="conseils-accompagnement" className={styles.h2}>Conseils et accompagnement personnalisé</h2>
-         <Image 
-          src="/image17.png" 
-          alt="Illustration des dangers des rats et souris pour la santé et les bâtiments" 
-          width={800} 
-          height={450} 
-          className={styles.image}
-          priority 
-        />
-        <p className={styles.p}>
-          Protection Nuisibles vous accompagne sur le long terme avec des recommandations adaptées à votre situation. 
-          Notre objectif : vous garantir un environnement sain, sans rongeurs.
-        </p>
-      </section>
-
-      <p className={styles.p}>
-        Contactez notre équipe pour toute <strong className={styles.strong}>intervention de dératisation à Perpignan</strong>, Canet-en-Roussillon, Saint-Estève, ou ailleurs dans les <strong className={styles.strong}>Pyrénées-Orientales</strong>.
-        Nous sommes disponibles rapidement pour des <strong className={styles.strong}>traitements anti-rats efficaces et discrets</strong>.
-      </p>
     </section>
   )
 }

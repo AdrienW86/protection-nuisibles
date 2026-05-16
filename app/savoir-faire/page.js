@@ -6,9 +6,9 @@ export const metadata = {
   description: "Découvrez notre expertise en lutte contre les nuisibles : dératisation, désinsectisation, dépigeonnage et prévention sur mesure.",
 }
 
-export default function page() {
+export default function SavoirFairePage() {
   return (
-    <main>
+    <main className="w-full">
       <SimpleBanner />
       <About />    
     </main>

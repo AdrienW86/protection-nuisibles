@@ -6,9 +6,9 @@ export const metadata = {
   description: "Traitement contre cafards, blattes, puces et autres insectes. Service de désinsectisation dans les Pyrénées-Orientales par des experts agréés.",
 }
 
-export default function page() {
+export default function DesinsectisationPage() {
   return (
-    <main>
+    <main className="w-full">
       <SimpleBanner />
       <DesinsectisationMenu />   
     </main>

@@ -16,12 +16,10 @@ export const metadata = {
   },
 }
 
-export default function page() {
+export default function DeratisationPage() {
   return (
-    <>    
-      <main>       
-        <DeratisationMenu />
-      </main>    
-    </>
+    <main className="w-full">       
+      <DeratisationMenu />
+    </main>    
   )
 }
