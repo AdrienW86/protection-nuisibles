@@ -31,9 +31,10 @@ export default function Header() {
             width={60}
             height={60}
             priority
-            className="w-12 h-12 sm:w-14 sm:h-14 object-contain group-hover:scale-105 transition-transform duration-200"
+            className="w-11 h-11 sm:w-14 sm:h-14 object-contain group-hover:scale-105 transition-transform duration-200"
           />
-          <div className="flex flex-col">
+          {/* Masqué sur les très petits écrans si le texte prend trop de place, s'affiche dès 350px */}
+          <div className="hidden xs:flex flex-col">
             <span className="text-sm font-black text-brand-blue tracking-tight uppercase leading-none">Protection</span>
             <span className="text-xs font-bold text-brand-red tracking-widest uppercase leading-none mt-0.5">Nuisibles</span>
           </div>
@@ -53,21 +54,30 @@ export default function Header() {
         </nav>
 
         {/* ZONE CTA URGENCE + HAMBURGER */}
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-2 sm:gap-3 shrink-0">
           
-          {/* BOUTON APPEL URGENCE (Clignote doucement et passe en premier plan) */}
+          {/* BOUTON APPEL URGENCE RESPONSIVE */}
           <a
             href="tel:+33757516414"
-            className="inline-flex items-center gap-2 bg-brand-red text-white text-xs sm:text-sm font-black px-4 py-2.5 sm:px-5 sm:py-3 rounded-full shadow-md hover:bg-red-700 transition-all duration-200 uppercase tracking-wider animate-pulse"
+            className="
+              bg-brand-red text-white transition-all duration-200 uppercase tracking-wider animate-pulse shadow-md hover:bg-red-700 font-black shrink-0
+              /* VERSION MOBILE : Cercle parfait */
+              w-11 h-11 rounded-full flex items-center justify-center text-lg
+              /* VERSION TABLETTE & PC (sm) : Devient le gros bouton rectangulaire d'origine */
+              sm:w-auto sm:h-auto sm:rounded-full sm:text-xs md:text-sm sm:px-5 sm:py-3
+            "
           >
-            <span className="text-sm sm:text-base">📞</span>
-            <span className="hidden xs:inline">Urgence : </span>07 57 51 64 14
+            <span>📞</span>
+            {/* Le texte se cache sur mobile et se déploie uniquement à partir du breakpoint sm */}
+            <span className="hidden sm:inline sm:ml-2 whitespace-nowrap">
+              Urgence : 07 57 51 64 14
+            </span>
           </a>
 
           {/* BOUTON HAMBURGER MOBILE (Masqué sur PC) */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="lg:hidden flex flex-col justify-center items-center w-10 h-10 rounded-xl bg-slate-50 hover:bg-slate-100 border border-slate-200/60 transition-colors"
+            className="lg:hidden flex flex-col justify-center items-center w-11 h-11 rounded-xl bg-slate-50 hover:bg-slate-100 border border-slate-200/60 transition-colors shrink-0"
             aria-label="Menu de navigation"
             aria-expanded={isMenuOpen}
           >
