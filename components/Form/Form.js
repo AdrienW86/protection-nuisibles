@@ -28,7 +28,6 @@ export default function Form() {
       } else {
           reset();
           setIsSended(true);
-          alert("Le formulaire a été envoyé avec succès")
       }
     }
   };
