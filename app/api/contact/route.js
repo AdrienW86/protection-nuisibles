@@ -27,7 +27,7 @@ export async function POST(req) {
 
         // 4. Envoi via le SDK Resend
         const { data, error } = await resend.emails.send({
-            from: `Protection Nuisibles <${process.env.EMAIL_MASTER}>`,
+            from: `Site Web <notifications@protection-nuisibles.fr>`,
             to: process.env.EMAIL_CLIENT,
             replyTo: email, // Permet de répondre directement au client en cliquant sur "Répondre"
             subject: `Protection Nuisibles - ${subject}`,
