@@ -1,6 +1,6 @@
-@import "tailwindcss";
-
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+@import "tailwindcss";
 
 /* CONFIGURATION DU THÈME TAILWIND V4 */
 @theme {
