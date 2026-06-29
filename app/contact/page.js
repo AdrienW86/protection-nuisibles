@@ -18,11 +18,12 @@ export default function Contact() {
       {/* TITRE */}
       <h2 className="text-3xl font-black text-slate-900 tracking-tight text-center mb-10">
         Nous contacter
-      </h2>    
-      
+      </h2>     
       <Map />
+        <h2 className="text-3xl font-black text-slate-900 tracking-tight text-center mb-10">
+          Demandez votre devis gratuit à domicile
+        </h2>
       <Form />  
-      
     </main>
   )
 }
