@@ -8,11 +8,6 @@ export const metadata = {
 
 export default function Contact() {
   return (
-    /* 
-      CHANGEMENT ICI : 
-      - Passé de pt-12 à pt-28 (ou pt-32) pour donner assez d'espace.
-      - Si ton header est très grand, pt-32 (128px) garantit que le titre descend en dessous.
-    */
     <main className="pt-28 pb-16 px-4 sm:px-6 max-w-6xl mx-auto w-full">
       
       {/* TITRE */}

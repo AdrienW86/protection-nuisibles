@@ -2,6 +2,7 @@ import './globals.css'
 import { Inter } from 'next/font/google'
 import Script from 'next/script'
 import Header from '@/components/Header/Header'
+import Facebook from '@/components/Facebook/Facebook'
 import Footer from '@/components/Footer/Footer'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -40,6 +41,7 @@ export default function RootLayout({ children }) {
         </Script>
         <Header />
           {children}
+          <Facebook />
         <Footer />
       </body>
     </html>

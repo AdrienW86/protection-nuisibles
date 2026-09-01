@@ -1,6 +1,17 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  /* tes options si nécessaire */
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: '**.fbcdn.net',
+      },
+      {
+        protocol: 'https',
+        hostname: '**.facebook.com',
+      },
+    ],
+  },
 };
 
 export default nextConfig;
